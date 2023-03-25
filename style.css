@@ -1,1 +1,343 @@
 
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    line-height: 1.5rem;
+    background-color: white;
+
+}
+
+.header-nav {
+    display: flex;
+    align-items:flex-end;
+    justify-content:space-around;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    background-color: black;   
+}
+
+
+.header-nav__leftlogo {
+    text-align:center;
+    line-height: 1%   
+}
+
+
+.header-nav--title {
+    font-size: 60px;
+    color: white;
+   
+}
+
+.header-nav--subtitle {
+    font-size: 30px;
+    color: white;
+   
+}
+
+
+.topnav {
+    padding-bottom: 20px;
+    font-size: 30px; 
+}
+
+
+.topnav a { 
+    text-decoration: none;
+
+}
+
+.topnav a:link{
+    color: white
+}
+
+.topnav a:hover{
+    text-decoration: underline;
+    text-align: center;
+    padding: 4px 4px;
+}
+
+.topnav a:visited {
+    color:rgb(241,217,122);
+}
+
+.bannerphoto {
+    background: url(/titanic.jpg) no-repeat center;
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-color: black;
+    position:relative;
+    padding-top: 20px;
+    border-top: rgb(219,129,56) 8px solid;
+    background-position: 0px -100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.bannerphoto__txt {
+    position: absolute;
+    top: 30px;
+    right: 60px;
+    line-height: 0px;
+    color:rgb(241,217,122);
+
+}
+
+.bannerphoto--maintxt {
+    font-size: 80px;  
+}
+
+.bannerphoto--subtxt {
+    font-size: 40px;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 8px;
+}
+
+.content-buttons {
+    display: flex;
+    justify-content:flex-end;
+    margin-top: -50px;
+   
+}
+
+.content-buttons__link {
+    padding: 10px 30px;
+    margin: 0px 0px 0px 20px;
+    border-radius: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background-color: rgb(221,160,53);
+
+}
+
+.about {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight:lighter;
+    margin-top: -20px;
+}
+
+.about__image {
+    float: right;
+    padding: 50px 10px 0px 5px;
+    width: 200px;
+    height: 290px;
+}
+
+.about__text {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    color:white;
+    background-color: rgb(39,95,142);
+    padding: 20px ;
+    display: flex;
+    justify-content:center;
+    border-top: rgb(219,129,56) 8px solid;
+}
+
+
+/* responsive screen for iPads */
+
+@media screen and  (min-width: 768px) and (max-width:1370px){
+
+.header-nav {
+    min-height: 150px;
+    
+}
+
+.header-nav__leftlogo {
+    color: white;
+    position: absolute;
+    top: 0;
+    text-align: center;
+}
+
+.header-nav--title {
+    font-size: 46px;
+
+}
+
+.header-nav--subtitle {
+    font-size: 28px;
+    
+}
+
+.topnav {
+    overflow: hidden;
+    display:contents;
+    text-align:center;
+    font-size: 28px;
+    
+}
+
+.topnav a {
+    text-decoration: none;
+ 
+
+}
+
+.topnav a:hover {
+    background-color: antiquewhite;
+    color: black;
+}
+
+.topnav a:active {
+    background-color: darkgoldenrod;
+    color:white
+}
+
+.bannerphoto {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-color: black;
+    position:relative;
+    background-position: 0px -30px;
+
+}
+
+.bannerphoto__txt {
+    color:rgb(253, 253, 170);
+    line-height: 10px;
+    text-align: center;
+
+}
+
+.bannerphoto--maintxt {
+    font-size: 40px; 
+}
+
+.bannerphoto--subtxt {
+    font-size: 30px;
+}
+
+.content-buttons {
+    display:flex;
+    grid-gap: 15px;
+    float: right;
+    margin-top: -40px;
+}
+
+.about {
+    font-size: 40px;
+    margin-top: -20px;
+    padding-left: 10px;
+}
+
+.about__text {
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.about__image {
+    padding: 0 5px 0px 5px;
+    width: 150px;
+    height: 220px;
+    margin-top: 10px;
+    float: right;
+}
+ 
+}
+
+
+/* responsive screen for phones */
+
+@media screen and  (max-width: 767px) {
+
+
+
+.header-nav {
+    min-height: 150px;   
+}
+    
+.header-nav__leftlogo {
+    color: white;
+    position: absolute;
+    top: 0;
+    text-align: center;
+}
+    
+.header-nav--title {
+    font-size: 34px;
+}
+    
+.header-nav--subtitle {
+    font-size: 20px;
+}
+    
+.topnav {
+    overflow: hidden;
+    font-size: 13px;
+    display: contents;
+    text-align: center;
+}
+    
+.topnav a:hover {
+    background-color: antiquewhite;
+    color: black;
+}
+    
+.topnav a:active {
+    background-color: darkgoldenrod;
+    color:white
+}
+    
+.bannerphoto {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-color: black;
+    position:relative;
+    background-position: 0px -30px;
+}
+    
+.bannerphoto__txt {
+    color:rgb(253, 253, 170);
+    position:absolute;
+    top: 170px;
+}
+    
+.bannerphoto--maintxt {
+    font-size: 35px; 
+}
+    
+.bannerphoto--subtxt {
+    font-size: 20px;
+}
+    
+.content-buttons {
+    display:grid;
+    grid-gap: 10px;
+    margin-top: -50px;
+}
+
+.about{
+    font-size: 40px;
+    margin-top: -60px;
+    margin-bottom: 60px;
+    padding-left: 10px;
+}
+
+
+.about__image {
+    display:grid;
+    padding: 0 5px 0px 5px;
+    width: 200px;
+    height: 290px;
+
+}
+    
+}
